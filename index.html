@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Localizador Geográfico Global</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1><span class="globe" aria-hidden="true">🌍</span> Localizador Geográfico Global</h1>
+  <p>Búsqueda con Nominatim (OpenStreetMap) y clima actual con Open-Meteo.<br>Por Valeria Xel Ayala Susano</p>
+</header>
+
+<main>
+  <div class="search-container">
+    <input type="text" id="city-input" placeholder="Escribe un lugar (ej. Monterrey, Madrid)" aria-label="Lugar a buscar" autocomplete="off">
+    <button id="search-btn">Buscar</button>
+  </div>
+
+  <div id="results" class="results" hidden></div>
+
+  <div id="weather-card" class="weather-card" aria-live="polite">
+    <p>Escribe un lugar para ver su ubicación en el mapa, sus coordenadas y el clima actual.</p>
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
